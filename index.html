@@ -2,39 +2,276 @@
 <html>
     <head>
         <title>A2 Classes</title>
-        <link rel="stylesheet" type="text/css" href="style.css" />
         <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link
+            href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
     </head>
     <body>
-        <!-- navbar -->
-        <nav class="zone" id="myDiv">
-            <ul class="main-nav" id="Menu">
-                <li class="left"><a href="index.html">A2 Classes</a></li>
-                <li class="liquid1"></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#why-us">Why Us?</a></li>
-                <li><a href="https://mailchi.mp/a04e1db806b1/contact-us">Contact Us</a></li>
-            </ul>
-        </nav>
+        <!-- Header -->
 
-        <!-- cover area -->
-        <div class="container zone">
-            <img class="cover" src="image.jpg" alt="" />
-        </div>
+        <header class="text-gray-700 body-font">
+            <div
+                class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+            >
+                <a
+                    class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+                    href="index.html"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                        ></path>
+                    </svg>
+                    <span class="ml-3 text-xl">A2 Classes</span>
+                </a>
+                <nav
+                    class="md:ml-auto flex flex-wrap items-center text-base justify-center"
+                >
+                    <a class="mr-5 hover:text-gray-900" href="#about-us"
+                        >About Us</a
+                    >
+                    <a
+                        class="mr-5 hover:text-gray-900"
+                        href="https://mailchi.mp/a04e1db806b1/contact-us"
+                        >Contact</a
+                    >
+                    <!-- <a class="mr-5 hover:text-gray-900" href="#services"
+                        >Services</a
+                    > -->
+                    <a class="mr-5 hover:text-gray-900" href="#why">Why Us?</a>
+                </nav>
+            </div>
+        </header>
 
-        <!-- ABOUT SECTION -->
-        <h1 class="zone red heading" id="about">ABOUT US</h1>
-        <div class="para">
-            We are here to help you unfold your programming journey and live your dream. We are self taught programmers, which simply imply that the programming languages we would enable you to learn have been comprehended by ourselves. We know how it is like to start learning a new programming language and cherish the process. Now, we wish to make this process easier and handy for as many people as possible.
-        </div>
+        <hr />
+        <!-- About us -->
 
-        <!-- Projects section -->
-        <h1 class="zone blue heading" id="why-us">Why Us?...</h1>
-        <div class="para">
-            Now you must be wondering why you would want to learn from us and not some professional. Well your understanding is not completely wrong about that. However you might want to consider hearing from us for a while. Firstly, you don’t need to be in school or any institution to learn from us, neither do you need a degree. All you need is passion for programming. Secondly, presumably you are in school and you didn't understand a topic your teacher just taught, you are most likely to ask your friend if they can help you understand the topic. When your friend teaches you the same topic you simply get it without any retarding difficulty. Now does that mean your friend is smarter than your teacher? Well no, it's just that he understands you better than your teacher. Now back at us, we are your friends here, who are trying to teach you the millennial language that we comprehended beautifully and now want to advance the aura of programming to you. So, believe us when we say that we can understand you better than any other professional. Still if you have any doubts, do feel free to <a href="https://mailchi.mp/a04e1db806b1/contact-us" style="text-decoration: underline;">contact us</a>
-        </div>
-        <footer class="zone yellow">&copy; 2020 A2 Classes</footer>
+        <section class="text-gray-700 body-font">
+            <div class="container px-5 py-24 mx-auto flex flex-col">
+                <div class="lg:w-4/6 mx-auto">
+                    <div class="rounded-lg h-64 overflow-hidden">
+                        <img
+                            alt="content"
+                            class="object-cover object-center h-full w-full"
+                            src="https://source.unsplash.com/1200x500/?html,css,JavaScript"
+                        />
+                    </div>
+                    <div class="flex flex-col sm:flex-row mt-10">
+                        <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                            <!-- <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div> -->
+                            <div
+                                class="flex flex-col items-center text-center justify-center"
+                                id="about-us"
+                            >
+                                <h2
+                                    class="font-medium title-font mt-4 text-gray-900 text-lg"
+                                >
+                                    ABOUT US
+                                </h2>
+                                <div
+                                    class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"
+                                ></div>
+                                <!-- <p class="text-base text-gray-600">Raclette knausgaard hella meggs normcore williamsburg enamel pin sartorial venmo tbh hot chicken gentrify portland.</p> -->
+                            </div>
+                        </div>
+                        <div
+                            class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left"
+                        >
+                            <p class="leading-relaxed text-lg mb-4">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. A incidunt aliquam excepturi
+                                blanditiis dicta. Quis voluptatem voluptatum,
+                                necessitatibus exercitationem minima beatae
+                                incidunt laboriosam sapiente culpa deserunt
+                                reiciendis doloremque deleniti optio rerum, nemo
+                                possimus. A placeat dolores quidem. Magnam, vero
+                                debitis doloribus dolorum nulla vel
+                                voluptatibus, quisquam perferendis quibusdam
+                                enim ducimus quidem fugiat odit ea expedita
+                                impedit, fugit aperiam incidunt reiciendis
+                                officiis assumenda blanditiis nihil. Quasi ipsam
+                                molestias odio earum iure?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Us -->
+        <section class="text-gray-700 body-font">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="text-center mb-20">
+                    <h1
+                        class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4"
+                    >
+                        WHY US?
+                    </h1>
+                    <div class="flex mt-6 justify-center">
+                        <div
+                            class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"
+                        ></div>
+                    </div>
+                </div>
+                <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+                    <div
+                        class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center"
+                    >
+                        <div
+                            class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0"
+                        >
+                            <svg
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                class="w-10 h-10"
+                                viewBox="0 0 24 24"
+                            >
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-grow">
+                            <h2
+                                class="text-gray-900 text-lg title-font font-medium mb-3"
+                            >
+                                Shooting Stars
+                            </h2>
+                            <p class="leading-relaxed text-base">
+                                Blue bottle crucifix vinyl post-ironic four
+                                dollar toast vegan taxidermy. Gastropub indxgo
+                                juice poutine, ramps microdosing banh mi pug VHS
+                                try-hard.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center"
+                    >
+                        <div
+                            class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0"
+                        >
+                            <svg
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                class="w-10 h-10"
+                                viewBox="0 0 24 24"
+                            >
+                                <circle cx="6" cy="6" r="3"></circle>
+                                <circle cx="6" cy="18" r="3"></circle>
+                                <path
+                                    d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"
+                                ></path>
+                            </svg>
+                        </div>
+                        <div class="flex-grow">
+                            <h2
+                                class="text-gray-900 text-lg title-font font-medium mb-3"
+                            >
+                                The Catalyzer
+                            </h2>
+                            <p class="leading-relaxed text-base">
+                                Blue bottle crucifix vinyl post-ironic four
+                                dollar toast vegan taxidermy. Gastropub indxgo
+                                juice poutine, ramps microdosing banh mi pug VHS
+                                try-hard.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center"
+                    >
+                        <div
+                            class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0"
+                        >
+                            <svg
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                class="w-10 h-10"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"
+                                ></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <div class="flex-grow">
+                            <h2
+                                class="text-gray-900 text-lg title-font font-medium mb-3"
+                            >
+                                Neptune
+                            </h2>
+                            <p class="leading-relaxed text-base">
+                                Blue bottle crucifix vinyl post-ironic four
+                                dollar toast vegan taxidermy. Gastropub indxgo
+                                juice poutine, ramps microdosing banh mi pug VHS
+                                try-hard.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://mailchi.mp/a04e1db806b1/contact-us">
+                    <button
+                    class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+                >
+                    Learn More
+                </button>
+                </a>
+            </div>
+        </section>
+
+        <!-- Services -->
+
+        <!-- Add if you feel like I'll help you with this -->
+
+        <!-- Footer -->
+        <hr />
+        <footer class="text-gray-700 body-font">
+            <div
+                class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
+            >
+                <p
+                    class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
+                >
+                    © 2020 A2Classes
+                </p>
+                <span
+                    class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+                >
+                    <a
+                        class="text-gray-500"
+                        href="https://mailchi.mp/a04e1db806b1/contact-us"
+                    >
+                        Contact
+                    </a>
+                </span>
+            </div>
+        </footer>
     </body>
 </html>
